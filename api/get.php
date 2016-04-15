@@ -1,7 +1,7 @@
 <?php
   require_once('../database/connection.php');
 
-  $stmt = $pdo->prepare('SELECT time, message FROM chatLogTwo');
+  $stmt = $pdo->prepare('SELECT time, message FROM chatLoger');
   $stmt->execute();
 
 

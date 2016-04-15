@@ -8,7 +8,7 @@ $json = json_decode($data, true); // Convert JSON to PHP array
 //of putting both pairs in its only executes the bit the user types
 $hello = $json['randomText'];
 
-$stmt = $pdo->prepare('INSERT INTO chatLogTwo (message) VALUES(:name)');
+$stmt = $pdo->prepare('INSERT INTO chatLoger (message) VALUES(:name)');
 $stmt->execute(array(':name' => $hello));
 
   # Affected Rows?
