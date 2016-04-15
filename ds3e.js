@@ -6,6 +6,8 @@ window.addEventListener("load", function(){
   function button(response)
     {
       document.getElementById('grabphpdiv').innerHTML = response
+      var objDiv = document.getElementById("grabphpdiv");
+      objDiv.scrollTop = objDiv.scrollHeight;
     };
 
   AjaxGet("api/get.php",button);
