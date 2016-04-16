@@ -12,11 +12,18 @@
     <div id="navBarSurround">
       <h1>Radard Chat Log</h1>
     </div>
-    <div id=grabphpdiv>
+    <div>
+<img id='circle' src = "images/MainRadar2.jpg"/>
+</div>
+    <div id='grabphpdiv'>
+
     </div>
-    <input id='chatMessage' type="text" name="randomText" value=""> <!-- Input instead of form -->
-    <button type="button" id='snd_btn'>Send</button> <!-- Possible event button -->
-    <button type="button" id =button>Display</button>
+    <div id='msgSndRfs'>
+      <input id='chatMessage' type="text" name="randomText" value=""> <!-- Input instead of form -->
+      <button type="button" id='snd_btn'>Send</button> <!-- Possible event button -->
+      <button type="button" id =button>Display</button>
+    </div>
+
     <!-- Script at the bottom make sure DOM is ready -->
     <script src='lib/ajaxget.js'> </script>
     <script src='lib/ajaxput.js'> </script>

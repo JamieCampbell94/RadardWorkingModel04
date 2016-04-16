@@ -89,9 +89,33 @@ a:active {
   border-color: black;
 }
 
+#circle {
+  height:50%;
+  width: 50%;
+  position: relative;
+  margin-left: 24%;
+
+}
 #grabphpdiv {
-  height: 300px;
-  width:50%;
-  background-color: ;
+  height: 330px;
+  width:20%;
+  margin-left: 39%;
+  margin-top: -35.5%;
+  /*background-color: red ;*/
   overflow: scroll;
+  position: relative;
+
+
+}
+
+
+
+#chatMessage {
+  margin-left: 100px;
+}
+
+#msgSndRfs {
+  position: relative;
+  margin-left: 36%;
+  /*margin-top: 1.7%;*/
 }
