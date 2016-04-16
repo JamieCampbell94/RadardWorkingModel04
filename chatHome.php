@@ -28,5 +28,17 @@
     <script src='lib/ajaxget.js'> </script>
     <script src='lib/ajaxput.js'> </script>
     <script src='chatLogRequest.js'> </script>
+
+<form>
+  <input type= "button" value = 'Red' onclick="document.fgColor='#FF0000';">
+  <input type= "button" value = 'Blue' onclick="document.fgColor='#FF0000';">
+  <input type= "button" value = 'Green' onclick="document.fgColor='#FF0000';">
+  <input type= "button" value = 'Yellow' onclick="document.fgColor='#FF0000';">
+  <input type= "button" value = 'Purple' onclick="document.fgColor='#FF0000';">
+  <input type= "button" value = 'White' onclick="document.fgColor='#FF0000';">
+  <input type= "button" value = 'black' onclick="document.fgColor='#FF0000';">
+</form>
+
+
   </body>
 </html>
