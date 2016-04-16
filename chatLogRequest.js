@@ -1,7 +1,12 @@
 window.addEventListener("load", function(){
     button();
     setInterval(goGetta, 1000);
+    clear();
   });
+
+  AjaxGet("api/get.php",button);
+  AjaxGet("api/get.php",Refresh);
+
 
   function button(response)
     {
@@ -10,8 +15,13 @@ window.addEventListener("load", function(){
       chatDiv.scrollTop = chatDiv.scrollHeight;
     };
 
-    AjaxGet("api/get.php",button);
 
-  function goGetta (){
-    AjaxGet("api/get.php",button);
-  }
+
+    function Refresh(response)
+      { document.getElementById("Refresh").addEventListener("click", function(){
+        document.getElementById('grabphpdiv').innerHTML = response; })
+      };
+
+    function goGetta (){
+      AjaxGet("api/get.php",button);
+    }

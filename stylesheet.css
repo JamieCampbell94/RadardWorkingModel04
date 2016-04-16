@@ -11,6 +11,15 @@
   margin-top:0.5%;
 }
 
+#chatTitle {
+  color:black;
+  font-family: raleway;
+  font-size: 300%;
+  margin-left: 37%;
+  margin-top:0.5%;
+
+}
+
 #img {
   width:100%;
 }

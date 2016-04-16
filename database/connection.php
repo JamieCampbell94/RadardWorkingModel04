@@ -25,7 +25,6 @@ try {
     `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
   )";
 
-
 $pdo->exec($sqld);
 
        $dbh = null;
