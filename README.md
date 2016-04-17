@@ -23,10 +23,10 @@ On initial startup of the web application the database and concurrent tables req
 
 ##5. Using the System
 
-    ##5.1 How to Log into the web application
+###5.1 How to Log into the web application
 
-    ##5.2  How to access the chat function
+###5.2  How to access the chat function
 
-    ##5.3 Using the chat function
+###5.3 Using the chat function
 
-    ##5.4 How to contact support
+###5.4 How to contact support
