@@ -1,4 +1,5 @@
 <?php
+
 require_once('../database/connection.php');
 
 $data = file_get_contents('php://input'); // Get any data sent to this file - special constant
@@ -8,6 +9,7 @@ $json = json_decode($data, true); // Convert JSON to PHP array
 //of putting both pairs in its only executes the bit the user types
 $hello = $json['randomText'];
 
+//pdo sql insert statment to put $json user entry into the table
 $stmt = $pdo->prepare('INSERT INTO chatLoger (message) VALUES(:name)');
 $stmt->execute(array(':name' => $hello));
 
