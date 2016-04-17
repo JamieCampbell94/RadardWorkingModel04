@@ -5,7 +5,7 @@
       <title>Rardard Chat Log</title>
       <meta charset='UTF-8'>
     <link rel='icon' href='favicon.ico'>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/chatHomeStylesheet.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -28,7 +28,7 @@
     <!-- Script at the bottom make sure DOM is ready -->
     <script src='lib/ajaxget.js'> </script>
     <script src='lib/ajaxput.js'> </script>
-    <script src='chatLogRequest.js'> </script>
+    <script src='lib/chatLogRequest.js'> </script>
 
 <form>
   <input type= "button" value = 'Red' onclick="document.fgColor='#FF0000';">
