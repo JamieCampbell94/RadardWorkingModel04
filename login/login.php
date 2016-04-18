@@ -15,8 +15,9 @@
   <input type="text" name="stu_name" id="name" required="required" placeholder="Username"/><br /><br />
   <input type="text" name="stu_name" id="name" required="required" placeholder="Password"/><br /><br />
   <input type="text" name="stu_name" id="name" required="required" placeholder="Radius"/><br /><br />
-</form>
 <input type="submit" value="Submit" id = "subBtn" name="submit"/><br />
+</form>
+
 
 </div>
 
