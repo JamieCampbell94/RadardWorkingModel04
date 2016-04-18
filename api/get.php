@@ -1,38 +1,14 @@
 <?php
-//  require_once('database/connection.php');
+  //Locates database connection
+  require_once('../database/connection.php');
 
+  //pdo sql select statement for chat log contents
+  $stmt = $pdo->prepare('SELECT time, message FROM chatLoger');
+  $stmt->execute();
 
-/** mysql hostname **/
-$hostname = 'localhost';
-
-/** mysql username **/
-$username = 'root';
-
-/** mysql password **/
-$password = 'root';
-
-try {
-  $pdo = new PDO('mysql:host=localhost;dbname=Chat', $username, $password);
-  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-      $stmt = $pdo->prepare('SELECT time, message FROM chatLogTwo');
-      $stmt->execute();
-
-
-      while($row = $stmt->fetchObject()) {
-        print date('H:i:s', strtotime($row->time)). ' - '. $row->message .'<br />' ;
-      }
-
-
-
-  /*** close the database connection ***/
-       $dbh = null;
-       }
-
-     catch(PDOException $e)
-    {
-      echo $e->getMessage();
+  //while loop to print time and message for each chat entry
+  while($row = $stmt->fetchObject()) {
+    print date('H:i:s', strtotime($row->time)). ' - '. $row->message .'<br />' ;
     }
 
  ?>
