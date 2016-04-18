@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Login</title>
-<link rel="stylesheet" type="text/css" href="../stylesheets/LoginStylesheet.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/loginStylesheet.css">
 <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
 <body>
